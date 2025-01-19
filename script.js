@@ -167,7 +167,7 @@ function toggle_theme() {
   theme_btn.classList.add("changing");
   if (theme === "Light") {
     theme = "Dark";
-    theme_btn.querySelector(".theme-pointer").className = " moon theme-pointer";
+    theme_btn.querySelector(".theme-pointer").className = "moon theme-pointer";
     theme_btn.classList.add("dark");
     document.body.classList.add("dark");
     document.querySelector("main").classList.add("dark");
@@ -176,7 +176,7 @@ function toggle_theme() {
     btns.forEach((btn) => btn.classList.add("dark"));
   } else {
     theme = "Light";
-    theme_btn.querySelector(".theme-pointer").className = " sun theme-pointer";
+    theme_btn.querySelector(".theme-pointer").className = "sun theme-pointer";
     theme_btn.classList.remove("dark");
     document.body.classList.remove("dark");
     document.querySelector("main").classList.remove("dark");
