@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.dark {
+      background-color: #2b2b2b;
+    }
+
+    main.dark {
+      background-color: #131313;
+    }
+
+    div.score.dark {
+      background-color: rgb(13, 124, 172);
+      border-color: rgb(0, 10, 78);
+    }
+
+    button.restart.dark {
+      background-color: rgb(65, 65, 65);
+      color: white;
+      border-color: white;
+    }
+
+    button.toggle-theme.dark {
+      border-color: rgb(255, 253, 253);
+      background-color: rgb(0, 0, 0);
+    }
+
+    button.toggle-theme.dark>.img {
+      transform: translateX(76%);
+
+    }
+
+    button.btn.dark {
+      background-color: rgb(59, 59, 59);
+      border-color: black;
+    }
+
+    button.btn.dark.won {
+      background-color: rgb(119, 119, 38);
+      border-color: white;
+    }
+
+  </style>
+</head>
+
+<body class="flex">
+  <main class="border">
+    <div class="score flex">
+      <div class="s1 flex">0</div>
+      <div class="theme-box">
+        <button class="restart">Restart</button>
+        <button class="toggle-theme" onclick="toggle_theme()">
+          <div class="sun theme-pointer"></div>
+        </button>
+      </div>
+      <div class="s2 flex">0</div>
+    </div>
+    <div class="play-area grid border">
+      <button class="btn a1" data-value="A1"></button>
+      <button class="btn b1" data-value="B1"></button>
+      <button class="btn c1" data-value="C1"></button>
+      <button class="btn a2" data-value="A2"></button>
+      <button class="btn b2" data-value="B2"></button>
+      <button class="btn c2" data-value="C2"></button>
+      <button class="btn a3" data-value="A3"></button>
+      <button class="btn b3" data-value="B3"></button>
+      <button class="btn c3" data-value="C3"></button>
+      <div class="cross"></div>
+    </div>
+    <div class="turn flex">
+      <div class="msg"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
